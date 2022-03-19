@@ -23,7 +23,8 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
     return Scaffold(
       backgroundColor: Color.fromARGB(255, 204, 218, 228),
       appBar: AppBar(
-        title: mostrarAppBar()
+        title: mostrarAppBar(),
+        toolbarHeight: 90,
         ),
         body: bodyAppSpf(),
     );
@@ -34,8 +35,10 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
     return AppBar(
       backgroundColor: Color.fromARGB(255, 204, 218, 228),
       elevation: 0,
+      toolbarHeight: 70,
       title: Padding(
-        padding: const EdgeInsets.only(left: 10, right: 10),
+        padding: const EdgeInsets.only(left: 10, right: 10, bottom: 15),
+        
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -45,14 +48,20 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
               fontWeight: FontWeight.bold
               ),
             ),
-            Container(
-              height: 150,
-              width: 150,
-              decoration: BoxDecoration(
-              image: DecorationImage(image: AssetImage("assets/images/person.jpg"),
-                fit: BoxFit.cover,
-              ),
-              color: Colors.black, borderRadius: BorderRadius.circular(10)),
+            // Container(
+            //   height: 150,
+            //   width: 150,
+            //   decoration: BoxDecoration(
+            //   image: DecorationImage(image: AssetImage("assets/images/person.jpg"),
+            //     fit: BoxFit.cover,
+            //   ),
+            //   color: Colors.black, borderRadius: BorderRadius.circular(10)),
+            // ),
+            CircleAvatar(
+              backgroundImage: AssetImage("assets/images/person.jpg",),
+              backgroundColor: Colors.red,
+              maxRadius: 25,
+
             ),
                 
           ],
@@ -67,6 +76,7 @@ class _PaginaPrincipalState extends State<PaginaPrincipal> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+          SizedBox(height: 5,),
           SingleChildScrollView(
             scrollDirection: Axis.horizontal,
             //crossAxisAlignment: CrossAxisAlignment.start,
