@@ -2,10 +2,10 @@
 import 'package:spotifyclone2/paginas/principal_app.dart';
 
 const List song_type_1 = [
-  "MAS ESCUCHADAS",
+  "MAS ESCUCHADAS", "NATURAL", "MUNDIALES", "SILVESTRE", "EXTINCIÓN"
 ];
 const List song_type_2 = [
-  "FAVORITAS",
+  "FAVORITAS","RELEASES", "HITS", "POP", "ROCK"
 ];
 const List songs = [
   {

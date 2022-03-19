@@ -1,11 +1,9 @@
 
 
 import 'package:flutter/material.dart';
-import 'package:flutter_vector_icons/flutter_vector_icons.dart';
 import 'package:spotifyclone2/paginas/albumpagina.dart';
 
 import '../constantes/const.dart';
-import 'package:spotifyclone2/paginas/albumpagina.dart';
 import 'package:page_transition/page_transition.dart';
 
 class PaginaPrincipal extends StatefulWidget {
