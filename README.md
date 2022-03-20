@@ -1,6 +1,6 @@
 # Ejercicio Practico - marzo 2022
 
-Se ha realizado un ejercicio práctico con SDK de Flutter, utilizando ScrollView, Listas dinámicas, etc. 
+Se ha realizado un ejercicio práctico con SDK de Flutter, utilizando ScrollView, listas dinámicas, Widgets, librearias varias, etc. 
 
 
 ## Getting Started
